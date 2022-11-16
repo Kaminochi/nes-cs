@@ -667,6 +667,19 @@ namespace NES
             SetZeroNeg(A);
             add_cycle = Convert.ToInt32(cross);
         }
+				
+	// Толмачев Артем
+        /// <summary>
+        /// Записать операнд в аккумулятор
+        /// </summary>
+        /// <param name="val"></param>
+        /// <param name="adr"></param>
+        static void LDA(byte val, ushort adr)
+        {
+            A = val;
+            SetZeroNeg(A);
+            add_cycle = Convert.ToInt32(cross);
+        }
 
 	/// <summary>
         /// Установить флаг переноса
